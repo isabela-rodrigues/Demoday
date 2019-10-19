@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<form action="/templates/cadastro" method="post">
+    {% csrf_token %}
+    <label for="email">email: </label>
+    <input name="email" type="email" required>
+
+    <label for="senha">senha: </label>
+    <input name="senha" type="password" required>
+
+    <label for="">Nome: </label>
+    <input name="nome" type="text" required>
+
+    <label for="">Frase Inspiradora: </label>
+    <input name="frase" id="" cols="30" rows="10" required> </input>
+
+    <label for="">Pessoa que motivou: </label>
+    <input name="inspirador" type="text">
+
+    <input type="submit" value="Enviar">
+</form>
+
+{% endblock %}
