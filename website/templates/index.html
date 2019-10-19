@@ -1,94 +1,40 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
+<nav>
 
-    <nav> 
-        <div id="Logotipo">
-            <img src="images/logo-reduzido.jpg" alt="">
+    <div class="logo">
+        <h1>Programadores</h1>
+    </div>
+    <div>
+
+        <ul class="nav-links">
+            <li><a href="a">INICIO</a></li>
+            <li><a href="a">O PROJETO</a></li>
+            <li><a href="a">O INSCREVA-SE</a></li>
+            <li><a href="a">CONTEUDOS</a></li>
+        </ul>
+
+        <div class="menu">
+            <div class="traco-1"></div>
+            <div class="traco-2"></div>
+            <div class="traco-3"></div>
         </div>
 
-        <div id="AreaNome">
-            <h1>ProjectProgrammers</h1>
-        </div>
-    </nav>
-    
-
-    <menu>
-        <div id="cliques">
-            <a href="">Sobre nós</a>
-            <a href="">Comece do zero</a>
-            <a href="">Junte-se a nós</a>
-    
-                <div>
-                    <input placeholder="Faça seu login" type="Login">
-                    <input placeholder="Digite sua senha" type="Senha">
-                    <button>Entrar</button>
-                </div>
-        </div>
-
-    </menu>
 
 
-    <header>
-        <div class="div-demoday">
-            <h2>Deseja ensinar ou fazer parte do mundo tecnológico?</h2>
-            <p>Saiba mais</p>
-        </div>
-        <h3>Nosso diferencial</h3>
-        <p>Incentivamos a participação de mentores no projeto, para que apoiem os futuros programadores com suas dúvidas e já os integram com o espírito de comunidade e apoio mútuo </p>
-        <img src="images/professores.png.png" alt="">
-        <img src="images/alunos.png.jpg" alt="">
+</nav>
 
-        </div>
-    </header>
 
-    <section>
-        <h4> FIQUE POR DENTRO</h4>
-        <P>Descubra cursos gratuuitos online e presencial Mais a faculdade perfeita para você!</P>
-        <img src="images/preto2.jpg" alt="">
-    </section>
+<main>
+    <img src="{% static 'images/main.png' %}" alt="imagem de uma tela de computador">
+    <h2>PROJETO PROGRAMADORES</h2>
+    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic sint voluptas quasi illum numquam molestias, harum
+        explicabo molestiae est reprehenderit illo unde non. Ullam, rerum quibusdam dolor praesentium harum eveniet?</P>
+</main>
+<section>
+    <h2>aqui</h2>
 
-    <aside>
-        <p>Conecte ás nossas Redes Sociais</p>
-        <div>
-            <span>
-                <a href="https://twitter.com/login?lang=pt">
-                    <img src="images/twitter.png" alt="Ícone do Twitter">
-                </a>
-            </span>
-            <span>
-                <a href="https://pt-br.facebook.com/">
-                    <img src="images/facebook.png" alt="Ícone do Facebook">
-                </a>
-            </span>
-            <span>
-                <a href="https://aboutme.google.com/u/0/?referer=gplus">
-                    <img src="images/google-plus-logo-button.png" alt="Ícone do Google plus">
-                </a>
-            </span>
-            <span>
-                <a href="https://br.linkedin.com/">
-                    <img src="images/linkedin.png" alt="Ícone do Linkedin">
-                </a>
-            </span>
-            <span>
-                <a href="https://www.youtube.com/?gl=BR&hl=pt">
-                    <img src="images/youtube-logotype.png" alt="Ícone do Youtube">
-                </a>
-            </span>
-        </div>
-
-    </aside>
-    
-    <footer>
-            <div>
-                <a href="">Contact</a>
-                <a href="">Download</a>
-                <a href="">Press</a>
-                <a href="">Email</a>
-                <a href="">Support</a>
-                <a href="">Privacy Policy</a>
-            </div>
-    </footer>
-
+</section>
+</body>
 {% endblock %}

@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    background-image: url("images/tijolinhos.jpg");                   
+}
+#Logotipo{
+    align-items: initial;
+}
+
+#AreaNome{
+    align-items: center;
+    color: white;
+    display: flex;
+    font-family: 'Lobster', cursive; 
+    font-size: 30px;
+    height: 50px;
+    justify-content: space-evenly; 
+
+    
+}
+.div-demoday{
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    
+}
+
+
+#cliques {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#cliques a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;  
+    text-decoration: none;
+    height: 60px;
+    margin: 10px;
+}
+
+aside{
+    margin: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+aside div{
+    display: flex;
+    justify-content: center;
+}
+
+aside p{
+    display: flex;
+    justify-content: center;
+}
+
+
+button{
+    background-color: #000000;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 10.5pt;
+    margin-right: 10px;
+    width: 60px;
+    height: 27px;
+}
+
+footer{
+    align-items: center;
+    background-color: #e3e3e3;
+    display: flex; 
+    height: 65px;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}  
+
+
+footer div a{
+    color: #909090;
+    font-family: 'Roboto', sans-serif; 
+    padding: 10px;
+    text-decoration: none;
+}
+
+header{
+    color: #694f4f;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    justify-content: center;
+}
+
+header h3{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+}
+
+header p{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+header img{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+input{
+    border: 0;
+    border-bottom-left-radius: 0px;
+    width: 150px;
+    height: 25px;
+    padding: 0;
+    background-color: #fbfbfb;
+    text-align: center;
+    font-size: medium;
+}
+
+menu{
+    background-color: rgb(49, 45, 45);
+    height: 50px;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lobster', cursive;
+    margin: 0px;
+    font-size: 30px;
+    background-color: #4c1b7d;
+}
+
+section h4{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+section p{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
