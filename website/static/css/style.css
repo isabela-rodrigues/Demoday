@@ -6,7 +6,7 @@ body{
                         'section'
                         'footer';
     grid-template-columns: 100vw;
-    margin: 0;
+    overflow-x: auto;
 }
 
 nav{
@@ -28,18 +28,16 @@ nav{
 
 .nav-links{
     align-items: center;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     font-size: 14px;
     height: 92vh;
     justify-content: space-between;
-    position: absolute;
     right: 0;
     top: 8vh;
     transform: translateX(100%);
     width: 30%;
-    overflow-x: hidden;
 }
 
 .nav-links a{
@@ -58,54 +56,13 @@ nav{
     height: 5px;
     justify-content: space-around;
     margin: 10px;
-    overflow: hidden;
     width: 25px;
-
-}
-
-
-
-.traco-1, .traco-3{
-    transform-origin: right center;
-}
-
-.ativo .traco-1{
-    transform: rotateZ(-45deg);
-}
-
-.ativo .traco-2{
-    opacity: 0;
-}
-
-.ativo .traco-3{
-    transform: rotateZ(45deg);
-}
-
-.visivel{
-    transform: translateY(0);
-}*/
-
-nav div:nth-child(3){
-    display: none;
-    
-}
-
-nav div:nth-child(4){
-    display: none;
-}
-
-nav div span{
     background-color: #ffffff;
     height: 3px;
     width: 30px;
     transition: .6s;
-    width: 100%;
 }
 
-nav h1{
-    color: white;
-    font-size: 30px;
-}
 
 main{
     align-items: center;
@@ -115,6 +72,7 @@ main{
     grid-area: main;
     justify-content: space-between;
 }
+
 main h2, main p{
     color: white;
     font-size: 25px;
@@ -122,34 +80,36 @@ main h2, main p{
 }
 
 main p{
-    color:white;
-    flex-direction: column;
     font-size: 15px;
 }
 
 main img{
     width: 200px;
 }
+
 section{
     align-items: center;
     display: flex;
     flex-direction: column;
     grid-area: section;
-
 }
 
 footer{
     align-items: center;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-decoration: none;
 }
 @media(min-width:580px){
-
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
     .nav-links{
-        display: none;
+        display: flex;
     }
     
     .nav-links li{
@@ -166,6 +126,7 @@ footer{
 
     .menu{
         display: none;
+        cursor: pointer;
     }
 
     main{
