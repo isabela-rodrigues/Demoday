@@ -8,7 +8,7 @@ class Usuario(models.Model):
     def __str__(self):
         return self.email
 
-class Cadastro(models.Model):
+class cadastro(models.Model):
     nome = models.CharField(max_length=255, verbose_name='Nome')
     sobrenome = models.CharField(max_length=255, verbose_name='Sobrenome')
     Endereco = models.CharField(max_length=255, verbose_name='Endereco')
@@ -18,7 +18,4 @@ class Cadastro(models.Model):
     ativo = models.BooleanField(default=True)
 
     def __str__(self):
-        return self.nome
-
-
-# Create your models here.
+        return self.nome 
