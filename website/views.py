@@ -6,19 +6,19 @@ def index (request):
 def Cadastro(request):
     if request.method == 'POST':
         data_usuario = Usuario()
-        data_usuario.email = request.POST['email']
-        data_usuario.senha = request.POST['senha']
+        data_usuario.email = request.POST['Email']
+        data_usuario.senha = request.POST['Senha']
         data_usuario.save()
 
         data_cadastro = Cadastro()
         data_cadastro.usuario = data_usuario
-        data_cadastro.nome = request.POST['nome']
-        data_cadastro.sobrenome = request.POST['sobrenome']
-        data_cadastro.endereco = request.POST['endereco']
+        data_cadastro.Nome = request.POST['Nome']
+        data_cadastro.Sobrenome = request.POST['Sobrenome']
+        data_cadastro.Endereco = request.POST['Endereco']
         data_cadastro.save()
 
         args = {
-            'sucesso': 'Você conseguiu campeão! Grite: Alucinação!'
+            'sucesso': 'Cadastro efetuado com sucesso.'
         }
 
         return render(request, 'login.html', args)
@@ -28,8 +28,8 @@ def Cadastro(request):
 
 def login(request):
     if request.method == "POST":
-        formulario_email = request.POST['email']
-        formulario_senha = request.POST['senha']
+        formulario_email = request.POST['Email']
+        formulario_senha = request.POST['Senha']
 
         usuario_logado = Cadastro.objects.filter(usuario__email = formulario_email,
                                               usuario__senha = formulario_senha).first()
