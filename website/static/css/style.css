@@ -1,13 +1,146 @@
 *{
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 nav{
     align-items: center;
-    background-color: #000000;
+    background-color: 	#9370DB;
+    display: flex;
+    grid-area: navbar;
+    justify-content: space-around;
+    min-height: 8vh;
+    position: fixed;
+    width: 100vw;
+}
+
+.logo{
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.nav-links{
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links a{
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+
+.menu {
+    display: none;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-around;
+    padding-top: 8vh;
+}
+
+main p{
+    color: #9370DB;
+    display: block;
+    font-size: 15px;
+    padding: 50px 30px ;
+}
+
+main h2{
+    display: block;
+    color: #DAA520;
+    font-size: 25px;
+}
+
+main a{
+    align-self: center;
+    background-color: #9370DB;
+    color: white;
+    border-radius: 3rem;
+    padding: 10px 20px;
+    padding-block-end: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+main img{
+
+    width: 200px;
+}
+
+/* SOBRE */
+.sobre{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: section;
+    height: 50vh;
+}
+
+/* CONTEUDO */
+.conteudo{
+    background-color: #DAA520;
+    height: 40vh;
+}
+
+.conteudo p{
+    color: white;
+}
+/* CONTATO */
+.contato{
+    background-color: #ffffff;
+    height: 30vh;
+}
+/* FOOTER*/
+
+
+footer{
+    align-items: center;
+    background-color:	#9370DB;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+footer h3{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+
+@media (max-width:768px){
+    
+
+nav{
+    align-items: center;
+    background-color: 	#9370DB;
     display: flex;
     grid-area: navbar;
     justify-content: space-around;
@@ -19,13 +152,22 @@ nav{
     color: white;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .nav-links{
+    align-items: center;
+    background-color: 	#9370DB;
     display: flex;
+    flex-direction: column;
+    height: 70vh;
     justify-content: space-around;
-    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in;
+    width: 50%;
 }
 
 .nav-links a{
@@ -40,11 +182,10 @@ nav{
     list-style: none;
 }
 
-.menu {
-    display: none;
+.menu{
+    display: block;
     cursor: pointer;
 }
-
 
 .menu div{
     background-color: white;
@@ -57,92 +198,14 @@ nav{
 main{
     align-items: center;
     display: flex;
-    background-color: #000000;
+    background-color: #ffffff;
     flex-direction: column;
     grid-area: main;
     justify-content: space-between;
 }
 
-main h2, main p{
-    color: white;
-    font-size: 25px;
-    text-align: center;
-}
-
-main p{
-    font-size: 15px;
-}
-
-main img{
-    width: 200px;
-}
-
-section{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    grid-area: section;
-}
-
-footer a img{
-    align-items: center;
-    background-color: rgb(5, 5, 5);
-    display: flex;
-    flex-direction: row;
-    height: 8px;
-    justify-content: space-around;
-    text-decoration: none;
-}
-
-
-
-@media screen and (max-width:1024px){
-    .nav-links{
-        width: 60%;
-    }
-}
-
-@media screen and (max-width:768px){
-    body{
-        
-    }
-    .nav-links{
-        align-items: center;
-        background-color: rgb(0, 0, 0);
-        display: flex;
-        flex-direction: column;
-        height: 92vh;
-        position: absolute;
-        right: 0;
-        top: 8vh;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        width: 50%;
-    }
-
-    .nav-links li{
-        opacity: 50%;
-    }
-
-    .menu{
-        display: block;
-    }
-}
-
 .nav-active{
     transform: translateX(0%);
-}
-
-@keyframes navLinkFade{
-    from{
-        opacity:0;
-        transform: translateX(50px);
-    }
-
-    to{
-        opacity: 1px;
-        transform: translateX(0px);
-    }
 }
 
 .toogle .line1{
@@ -157,5 +220,14 @@ footer a img{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+@keyframes navLinkFade{}
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
 
-
+    to{
+        opacity: 1px;
+        transform: translateX(0px);
+        }
+    }

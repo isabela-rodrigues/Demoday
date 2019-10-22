@@ -19,6 +19,7 @@ const navSlide = () => {
 
         });
 
+
         //menu animation
         menu.classList.toggle('toggle');
     });
