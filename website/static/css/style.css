@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    overflow: hidden;
     padding: 0;
 }
 
@@ -54,9 +55,9 @@ nav{
 main{
     align-items: left;
     background-image: url(' /static/images/bg.png');
-    background-size: 70%;
+    background-size: 65%;
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: left;
     background-position-y: center;
     display: flex;
     flex-direction: column;
@@ -67,17 +68,21 @@ main{
 
 
 main h2{
+    align-self: center;
     color: #DAA520;
-    font-size: 25px;
-    padding-top: 180px;
+    font-size: 30px;
+    padding-top: 200px;
+    padding-left: 750px;
    
     
 }
 
 main p{
+    align-self: left;
     display: block;
     color: #9370DB;
-    font-size: 15px;
+    font-size: 20px;
+   
 }
 
 
@@ -87,7 +92,7 @@ main a{
     border-radius: 3rem;
     color: white;
     font-size: 20;
-    padding: 20px 40px;
+    padding: 10px 30px;
     text-decoration: none;
     text-align: center;
 }
@@ -120,28 +125,34 @@ main a{
 
 /* CONTATO */
 .contato{
-    align-self: center;
+    align-items: center;
+    display: flex;
     height: 30vh;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
     
 }
+  
 
 .square{
     align-items: center;
-    background-color: #ffffff;
+    background-color: #DAA520;
     display: flex;
-   
-}
-.contato h2{
-    color: #808080;
+    flex-direction: column;
+    padding: 70px 30px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .contato h4,p{
     color: white;
+    display: flex;
+    font-size: 14px;
+    position: 0px;
 }
 
-.contato a{
-    background-color: #DAA520;
-}
+
 /* FOOTER*/
 
 

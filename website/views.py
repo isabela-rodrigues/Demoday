@@ -3,14 +3,14 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
     
-def cadastro(request):
+def Cadastro(request):
     if request.method == 'POST':
         data_usuario = Usuario()
         data_usuario.email = request.POST['email']
         data_usuario.senha = request.POST['senha']
         data_usuario.save()
 
-        data_cadastro = cadastro()
+        data_cadastro = Cadastro()
         data_cadastro.usuario = data_usuario
         data_cadastro.Nome = request.POST['nome']
         data_cadastro.Sobrenome = request.POST['sobrenome']
@@ -31,7 +31,7 @@ def login(request):
         formulario_email = request.POST['email']
         formulario_senha = request.POST['senha']
 
-        usuario_logado = cadastro.objects.filter(usuario__email = formulario_email,
+        usuario_logado = Cadastro.objects.filter(usuario__email = formulario_email,
                                               usuario__senha = formulario_senha).first()
 
         if usuario_logado is not None:
