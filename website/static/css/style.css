@@ -50,52 +50,61 @@ nav{
     display: none;
 }
 
+
 main{
-    align-items: center;
+    align-items: left;
+    background-image: url(' /static/images/bg.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    justify-content: space-around;
-    padding-top: 8vh;
+    height: 90vh;
+    justify-content: space-between;
+    
+}
+
+
+main h2{
+    color: #DAA520;
+    font-size: 25px;
+    padding-top: 180px;
+   
+    
 }
 
 main p{
-    color: #9370DB;
     display: block;
+    color: #9370DB;
     font-size: 15px;
-    padding: 50px 30px ;
 }
 
-main h2{
-    display: block;
-    color: #DAA520;
-    font-size: 25px;
-}
 
 main a{
     align-self: center;
     background-color: #9370DB;
-    color: white;
     border-radius: 3rem;
-    padding: 10px 20px;
-    padding-block-end: 0;
+    color: white;
+    font-size: 20;
+    padding: 20px 40px;
     text-decoration: none;
     text-align: center;
 }
 
 
-main img{
 
-    width: 200px;
-}
 
 /* SOBRE */
 .sobre{
     align-items: center;
     display: flex;
     flex-direction: column;
-    grid-area: section;
     height: 50vh;
+}
+
+.sobre h2, p{
+    color: #808080;
 }
 
 /* CONTEUDO */
@@ -104,13 +113,34 @@ main img{
     height: 40vh;
 }
 
-.conteudo p{
-    color: white;
+.conteudo h2,p{
+    color: #ffffff;
 }
+
+
 /* CONTATO */
 .contato{
-    background-color: #ffffff;
+    align-self: center;
     height: 30vh;
+    
+}
+
+.square{
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+   
+}
+.contato h2{
+    color: #808080;
+}
+
+.contato h4,p{
+    color: white;
+}
+
+.contato a{
+    background-color: #DAA520;
 }
 /* FOOTER*/
 
@@ -142,7 +172,6 @@ nav{
     align-items: center;
     background-color: 	#9370DB;
     display: flex;
-    grid-area: navbar;
     justify-content: space-around;
     min-height: 8vh;
     font-family: 'Poppins', sans-serif;
@@ -197,6 +226,11 @@ nav{
 
 main{
     align-items: center;
+    background-image: url(' /static/images/bg2.png');
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
     display: flex;
     background-color: #ffffff;
     flex-direction: column;
