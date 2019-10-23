@@ -70,7 +70,7 @@ main{
 main h2{
     align-self: center;
     color: #DAA520;
-    font-size: 30px;
+    font-size: 35px;
     padding-top: 200px;
     padding-left: 750px;
    
@@ -80,8 +80,8 @@ main h2{
 main p{
     align-self: center;
     display: block;
-    color: #9370DB;
-    font-size: 20px;
+    color: rgb(100, 100, 102);
+    font-size: 25px;
     padding-block-end: 300px;
     padding-left: 790px;
 
