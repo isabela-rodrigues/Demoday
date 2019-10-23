@@ -82,7 +82,7 @@ main p{
     display: block;
     color: #9370DB;
     font-size: 20px;
-   
+
 }
 
 
@@ -115,14 +115,48 @@ main a{
 /* CONTEUDO */
 .conteudo{
     background-color: #DAA520;
-    height: 40vh;
+    height: 100vh;
 }
 
 .conteudo h2,p{
     color: #ffffff;
 }
 
+.logica{
+    align-items: center;
+    background-image: url(' /static/images/log.png');
+    background-size: 10%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 30px;
+    text-align: center;
+    text-decoration: none;
+}
 
+.front{
+    align-items: center;
+    background-image: url(' /static/images/front.png');
+    background-size: 10%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.back{
+    align-items: center;
+    background-image: url(' /static/images/backend.png');
+    background-size: 10%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 30px;
+    text-align: center;
+    text-decoration: none;
+}
 /* CONTATO */
 .contato{
     align-items: center;
@@ -135,7 +169,7 @@ main a{
 }
   
 
-.square{
+.git{
     align-items: center;
     background-color: #DAA520;
     display: flex;
