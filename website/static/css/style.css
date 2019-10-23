@@ -78,10 +78,12 @@ main h2{
 }
 
 main p{
-    align-self: left;
+    align-self: center;
     display: block;
     color: #9370DB;
     font-size: 20px;
+    padding-block-end: 300px;
+    padding-left: 790px;
 
 }
 
