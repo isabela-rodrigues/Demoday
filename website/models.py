@@ -1,21 +1,18 @@
+from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
-class Usuario(models.Model):
-    email = models.EmailField(max_length=255, verbose_name='Email', unique=True)
-    senha = models.CharField(max_length=16, verbose_name='Senha')
+
+class Post(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
 
     def __str__(self):
-        return self.email
-
-class Cadastro(models.Model):
-    nome = models.CharField(max_length=255, verbose_name='Nome')
-    sobrenome = models.CharField(max_length=255, verbose_name='Sobrenome')
-    Endereco = models.CharField(max_length=255, verbose_name='Endereco')
-    usuario = models.OneToOneField(Usuario, on_delete=models.CASCADE, null=True)
-
-    criado_em =  models.DateTimeField(default=timezone.now)
-    ativo = models.BooleanField(default=True)
-
-    def __str__(self):
-        return self.nome 
+        return self.title

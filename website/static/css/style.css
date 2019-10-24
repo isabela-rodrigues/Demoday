@@ -105,12 +105,22 @@ main a{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 70vh;
 }
 
-.sobre h2, p{
+.sobre h2{
     color: #808080;
+    font-size: 40px;
     margin-top: 100px;
+}
+
+.sobre p{
+    
+    color: #808080;
+    padding: 10px 40px;
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 
@@ -206,7 +216,13 @@ footer h3{
 
 
 @media (max-width:768px){
-    
+*{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+        padding: 0;
+        
+    }
 
 nav{
     align-items: center;
@@ -264,19 +280,120 @@ nav{
     transition: all 0.3s ease;
 }
 
-main{
+main{ 
     align-items: center;
     background-image: url(' /static/images/bg2.png');
-    background-size: 35%;
+    background-size: 50%;
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: center;
     background-position-y: center;
     display: flex;
     background-color: #ffffff;
     flex-direction: column;
     grid-area: main;
     justify-content: space-between;
+    text-align: center;
 }
+
+/* SOBRE */
+.sobre{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.sobre h2, p{
+    color: #808080;
+    margin-top: 100px;
+}
+
+
+/* CONTEUDO */
+.conteudo{
+    align-items: center;
+    background-color: #9370DB;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    margin: 70px auto;
+
+}
+
+
+.conteudo h2{
+    color: #ffffff;
+}
+
+.conteudo p{
+    font-size: 5px;
+}
+
+.conteudo a img{
+    size: 5px;
+}
+
+.circle{
+    margin: 10px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icon{
+    width: 30%;
+}
+
+/* CONTATO */
+.contato{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-around;
+     
+}
+  
+.rede{
+    align-items: center;
+    background-color: #DAA520;
+    display: flex;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.icon-rede{
+    width: 10%;
+}
+
+.contato h2,p{
+    color: white;
+    font-size: 15px;
+    margin: 0;
+
+}
+
+
+/* FOOTER*/
+
+
+footer{
+    align-self: center;
+    background-color:	#9370DB;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 100px;
+    padding: 10px 2px;
+}
+
+footer h3{
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0px;
+}
+
 
 .nav-active{
     transform: translateX(0%);
