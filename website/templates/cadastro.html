@@ -14,6 +14,7 @@
     <title>Document</title>
 </head>
 <body>
+<<<<<<< HEAD
 <div id= "corpo-form">
     <h1>Entrar</h1>
     <form action="site" method="post">
@@ -23,6 +24,11 @@
         <a href="Ainda não é cadastrado?"><strong>Cadastre-se</strong></a>
         <!-- {% csrf_token %} -->
         <!-- <label for="email">E-mail: </label>
+=======
+    <form action="/cadastro" method="post">
+        {% csrf_token %}
+        <label for="email">E-mail: </label>
+>>>>>>> 62f1bc95a588636ddc235659820bd120add7526a
         <input name="email" type="email" required>
     
         <label for="senha">senha: </label>
