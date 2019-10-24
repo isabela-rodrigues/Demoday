@@ -20,6 +20,6 @@ from website import templates
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
-    path('cadastro', views.Cadastro),
+    path('localhost:8000/cadastro', views.Cadastro),
     path('login', views.login),
 ]

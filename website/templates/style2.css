@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(230, 227, 223);
+    font-family: monospace;
+}
+input{
+    display: block;
+    height: 55px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 1px solid rgb(135, 75, 146);
+    font-size: 16pt;
+    padding: 7px 15px;
+    
+}
+
+div#corpo-form{
+    /* background-color: rosybrown; */
+    width: 420px;
+    margin: 155px auto 0px auto;
+}
+
+div#corpo-form h1{
+    text-align: center;
+    padding: 20px;
+
+}
+
+a{
+    color: coral;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+input [type=submit]{
+    background-color: bisque;
+}

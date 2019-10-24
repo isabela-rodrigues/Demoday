@@ -1,7 +1,7 @@
-<!-- 
+
 {% extends 'base.html' %}
 {% load staticfiles %}
-{% block content %} -->
+{% block content %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,19 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
-    <link rel="stylesheet" href="style2.css">
     <title>Document</title>
 </head>
 <body>
-<div id= "corpo-form">
-    <h1>Entrar</h1>
-    <form action="site" method="post">
-        <input type="E-mail" placeholder="Usuario">
-        <input type="password" placeholder="Senha">
-        <input type="submit" value="ACESSAR">
-        <a href="Ainda não é cadastrado?"><strong>Cadastre-se</strong></a>
-        <!-- {% csrf_token %} -->
-        <!-- <label for="email">E-mail: </label>
+    <form action="/" method="post">
+        {% csrf_token %}
+        <label for="email">E-mail: </label>
         <input name="email" type="email" required>
     
         <label for="senha">senha: </label>
@@ -36,13 +29,11 @@
     
         <label for="">Endereço: </label>
         <input name="endereco" type="text" required>
-        <input type="submit" value="Enviar"> -->
+        <input type="submit" value="Enviar">
     
     </form>
-</div>
     
 </body>
 </html>
 
-<!-- {% endblock %} -->
-
+{% endblock %}
