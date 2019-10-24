@@ -14,62 +14,67 @@
 </main>
 
 <section id="sobre" class="sobre">
-    <h2></h2>
+    <h2> O QUE É O PROGRAMADORES?</h2>
 
-    <!-- <input placeholder="Faça seu login" type="Login">
-        <input placeholder="Digite sua senha" type="Senha">
-        <button>Entrar</button> -->
+
 
 </section>
 
 
 <section id="conteudo" class="conteudo">
-    <h2>conteudos</h2>
 
-    <div class="logica">
 
+    <div class="circle">
+        <a href="#" target="blank">
+            <img class="icon" src=" {% static '/images/log.png' %}" alt="">
+        </a>
+        <h2>Lógica de Programação</h2>
     </div>
 
-    <div class="front">
-
+    <div class="circle">
+        <a href="#" target="blank">
+            <img class="icon" src=" {% static '/images/backend.png' %}" alt="">
+        </a>
+        <h2>Back-End</h2>
     </div>
 
-    <div class="back">
-
+    <div class="circle">
+        <a href="#" target="blank">
+            <img class="icon" src=" {% static '/images/frontend.png' %}" alt="">
+        </a>
+        <h2>Front-End</h2>
     </div>
+
 
 </section>
 
 <section id="contato" class="contato">
 
-
-    <div class="square">
+    <div class="rede">
         <a href="#" target="blank">
-            <img src="{% static '/images/git.png' %}" alt="">
+            <img class="icon-rede" src=" {% static '/images/github.png' %}" alt="">
         </a>
-        <h4>GITHUB</h4>
+        <h2>GITHUB</h2>
         <p>/projetoprogramadores</p>
     </div>
 
-    <div class="square">
+    <div class="rede">
         <a href="#" target="blank">
-            <img src="{% static '/images/git.png' %}" alt="">
+            <img class="icon-rede" src=" {% static '/images/twitter.png' %}" alt="">
         </a>
-        <h4>INSTA</h4>
+        <h2>TWITTER</h2>
         <p>/projetoprogramadores</p>
     </div>
 
-    <div class="square">
+    <div class="rede">
         <a href="#" target="blank">
-            <img src="{% static '/images/git.png' %}" alt="">
+            <img class="icon-rede" src=" {% static '/images/insta.png' %}" alt="">
         </a>
-        <h4>TWITTER</h4>
+        <h2>INSTAGRAM</h2>
         <p>/projetoprogramadores</p>
     </div>
-
-
-
 
 </section>
-</body>
+
+
 {% endblock %}

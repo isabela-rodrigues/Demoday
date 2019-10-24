@@ -1,16 +1,14 @@
 *{
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    overflow: hidden;
     padding: 0;
+    
 }
 
 nav{
     align-items: center;
     background-color: 	#9370DB;
     display: flex;
-    grid-area: navbar;
     justify-content: space-around;
     min-height: 8vh;
     position: fixed;
@@ -57,7 +55,7 @@ main{
     background-image: url(' /static/images/bg.png');
     background-size: 65%;
     background-repeat: no-repeat;
-    background-position-x: left;
+    background-position-x: -50px;
     background-position-y: center;
     display: flex;
     flex-direction: column;
@@ -68,22 +66,21 @@ main{
 
 
 main h2{
-    align-self: center;
     color: #DAA520;
     font-size: 35px;
-    padding-top: 200px;
-    padding-left: 750px;
-   
+    padding-top: 220px;
+    padding-left: 700px;
+    text-align: center;
     
 }
 
 main p{
-    align-self: center;
-    display: block;
     color: rgb(100, 100, 102);
     font-size: 25px;
-    padding-block-end: 300px;
-    padding-left: 790px;
+    padding: 10px 10px;
+    padding-block-end: 250px;
+    padding-left: 700px;
+    text-align: center;
 
 }
 
@@ -94,6 +91,7 @@ main a{
     border-radius: 3rem;
     color: white;
     font-size: 20;
+    margin: -20px;
     padding: 10px 30px;
     text-decoration: none;
     text-align: center;
@@ -107,85 +105,79 @@ main a{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 80vh;
 }
 
 .sobre h2, p{
     color: #808080;
+    margin-top: 100px;
 }
+
 
 /* CONTEUDO */
 .conteudo{
-    background-color: #DAA520;
+    align-items: center;
+    background-color: #9370DB;
+    background-size: cover;
+    display: flex;
     height: 100vh;
+    justify-content: space-around;
+    margin: 70px auto;
+
 }
 
-.conteudo h2,p{
+
+.conteudo h2{
     color: #ffffff;
 }
 
-.logica{
-    align-items: center;
-    background-image: url(' /static/images/log.png');
-    background-size: 10%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    padding: 70px 30px;
+.conteudo p{
+    font-size: 15px;
+}
+
+.conteudo a img{
+    size: 5px;
+}
+
+.circle{
+    margin: 10px;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
 }
 
-.front{
-    align-items: center;
-    background-image: url(' /static/images/front.png');
-    background-size: 10%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    padding: 70px 30px;
-    text-align: center;
-    text-decoration: none;
+.icon{
+    width: 50%;
 }
 
-.back{
-    align-items: center;
-    background-image: url(' /static/images/backend.png');
-    background-size: 10%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    padding: 70px 30px;
-    text-align: center;
-    text-decoration: none;
-}
 /* CONTATO */
 .contato{
     align-items: center;
     display: flex;
-    height: 30vh;
     flex-direction: row;
+    height: 20vh;
     justify-content: space-around;
-    margin-top: 20px;
-    
+     
 }
   
-
-.git{
+.rede{
     align-items: center;
     background-color: #DAA520;
     display: flex;
     flex-direction: column;
-    padding: 70px 30px;
+    padding: 30px 40px;
     text-align: center;
-    text-decoration: none;
 }
 
-.contato h4,p{
+.icon-rede{
+    width: 70%;
+}
+
+.contato h2,p{
     color: white;
-    display: flex;
-    font-size: 14px;
-    position: 0px;
+    font-size: 15px;
+    margin: 0;
+
 }
 
 
@@ -193,18 +185,19 @@ main a{
 
 
 footer{
-    align-items: center;
+    align-self: center;
     background-color:	#9370DB;
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    justify-content: space-around;
+    font-weight: bold;
+    text-align: center;
     text-decoration: none;
+    margin-top: 100px;
+    padding: 10px 2px;
 }
 
 footer h3{
     color: #ffffff;
     font-size: 15px;
+    margin: 0px;
 }
 
 
